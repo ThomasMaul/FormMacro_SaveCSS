@@ -1,0 +1,147 @@
+{
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"windowSizingX": "variable",
+	"windowSizingY": "variable",
+	"windowMinWidth": 0,
+	"windowMinHeight": 0,
+	"windowMaxWidth": 32767,
+	"windowMaxHeight": 32767,
+	"rightMargin": 20,
+	"bottomMargin": 20,
+	"events": [
+		"onLoad",
+		"onPageChange",
+		"onValidate",
+		"onClick",
+		"onDoubleClick",
+		"onOutsideCall",
+		"onBeginDragOver",
+		"onDragOver",
+		"onDrop",
+		"onAfterKeystroke",
+		"onMenuSelect",
+		"onPluginArea",
+		"onAfterEdit",
+		"onTimer",
+		"onBoundVariableChange"
+	],
+	"windowTitle": "CSS Macro",
+	"destination": "detailScreen",
+	"pages": [
+		{
+			"objects": {}
+		},
+		{
+			"objects": {
+				"Text": {
+					"type": "text",
+					"text": "Save CSS in:",
+					"top": 22,
+					"left": 28,
+					"width": 94,
+					"height": 16
+				},
+				"Text1": {
+					"type": "text",
+					"text": "Save as:",
+					"top": 51,
+					"left": 29,
+					"width": 94,
+					"height": 16
+				},
+				"name": {
+					"type": "input",
+					"left": 126,
+					"top": 83,
+					"width": 179,
+					"height": 17,
+					"dataSource": "Form:C1466.name",
+					"placeholder": "For store as class, enter class name"
+				},
+				"Text2": {
+					"type": "text",
+					"text": "Class name",
+					"top": 84,
+					"left": 28,
+					"width": 78,
+					"height": 16
+				},
+				"okbutton": {
+					"type": "button",
+					"text": "Save",
+					"top": 309,
+					"left": 208,
+					"width": 106,
+					"height": 34,
+					"events": [
+						"onClick"
+					],
+					"action": "accept",
+					"defaultButton": true,
+					"method": "ObjectMethods/okbutton.4dm"
+				},
+				"cancelbutton": {
+					"type": "button",
+					"text": "Cancel",
+					"top": 309,
+					"left": 33,
+					"width": 106,
+					"height": 34,
+					"events": [
+						"onClick"
+					],
+					"action": "cancel"
+				},
+				"CSSStorage": {
+					"type": "dropdown",
+					"left": 125,
+					"top": 19,
+					"width": 184,
+					"height": 22,
+					"events": [
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.CSSStorage",
+					"dataSourceTypeHint": "object"
+				},
+				"Preview": {
+					"type": "input",
+					"left": 29,
+					"top": 120,
+					"width": 265,
+					"height": 177,
+					"dataSource": "Form:C1466.preview",
+					"enterable": false,
+					"scrollbarVertical": "visible",
+					"borderStyle": "dotted"
+				},
+				"CSSType": {
+					"type": "dropdown",
+					"left": 125,
+					"top": 48,
+					"width": 184,
+					"height": 22,
+					"events": [
+						"onClick",
+						"onDataChange"
+					],
+					"dataSource": "Form:C1466.CSSType",
+					"dataSourceTypeHint": "object",
+					"method": "ObjectMethods/CSSType.4dm"
+				}
+			}
+		}
+	],
+	"geometryStamp": 60,
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	},
+	"method": "method.4dm"
+}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="FormMacro_SaveCSS" uuid="294AD934EF934A94AAB991B837E59D62" collation_locale="de">
+	<schema name="DEFAULT_SCHEMA"/>
+	<base_extra __stringCompHash="icu:72.1.0" __keywordBuildingHash="icu:72.1.0">
+		<journal_file journal_file_enabled="true"/>
+	</base_extra>
+</base>
